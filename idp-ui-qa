@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: idp-ui
+  annotations:
+    backstage.io/kubernetes-label-selector: 'app=idp-ui'
+    backstage.io/kubernetes-namespace: '643e41084fe8bd57d9f2be43'    
+  tags:
+    - java
+spec:
+  type: service
+  lifecycle: prod
+  owner: idp
+  system: idp
