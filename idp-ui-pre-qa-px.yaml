@@ -4,7 +4,7 @@ metadata:
   name: idp-ui-pre-qa-px
   annotations:
     backstage.io/kubernetes-label-selector: 'app=idp-ui'
-    backstage.io/kubernetes-namespace: '6411a75564c0f82e67dfede1'    
+    # backstage.io/kubernetes-namespace: '6411a75564c0f82e67dfede1'    
   tags:
     - java
 spec:
