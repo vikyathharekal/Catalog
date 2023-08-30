@@ -4,7 +4,11 @@ metadata:
   name: idp-ui
   annotations:
     backstage.io/kubernetes-label-selector: 'app=idp-ui'
-    # backstage.io/kubernetes-namespace: '6411a75564c0f82e67dfede1'    
+    # backstage.io/kubernetes-namespace: '6411a75564c0f82e67dfede1'  
+    harness.io/pipelines: |
+      labelA: https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/testGroupCreateSahiba/projects/test2FA/pipelines/wec/executions?storeType=INLINE
+    harness.io/services: |
+      labelA: https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/testGroupCreateSahiba/projects/test2FA/services/qwx?tab=summaryTab    
   tags:
     - java
 spec:
