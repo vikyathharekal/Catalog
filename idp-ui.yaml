@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: idp-ui
+  name: idp-ui-2
   annotations:
     backstage.io/kubernetes-label-selector: 'app=idp-ui'
     # backstage.io/kubernetes-namespace: '6411a75564c0f82e67dfede1'  
