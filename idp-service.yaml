@@ -1,0 +1,37 @@
+---
+kind: "Component"
+spec:
+  type: "Service"
+  lifecycle: "production"
+  owner: "idmbackend"
+  system: "idp"
+  providesApis:
+    - idp-service
+  dependsOn: 
+    - Component:ng-manager  
+apiVersion: "backstage.io/v1alpha1"
+metadata:
+  name: "idp-service"
+  description: IDP backend service
+  tags: [java]
+  links:
+    - title: repo
+      url: https://github.com/harness/harness-core
+    - title: Debugging FAQs
+      url: https://harness.atlassian.net/wiki/spaces/IDP/pages/21456552616/Debugging+FAQs
+    - title: Troubleshooting guide
+      url: https://harness.atlassian.net/wiki/spaces/IDP/pages/21483946109/Troubleshooting+guide
+  annotations:
+    harness.io/cd-serviceId: "idp-service"
+    backstage.io/kubernetes-label-selector: 'app=idp-service'
+    harness.io/ci-pipelineIds: featurebuildidpservice
+    harness.io/project-url: https://app.harness.io/ng/account/vpCkHKsDSxK9_KYfjCTMKA/ci/orgs/default/projects/IDP_UI/dashboard
+    harness.io/project-url-stage: https://stage.harness.io/ng/account/wFHXHD0RRQWoO8tIZT5YVw/cd/orgs/Harness/projects/Operations/deployments
+    harness.io/projects-stage: Operations,RELEASEBUILDS 
+    harness.io/cd-serviceId-stage: idpservice
+    harness.io/ci-pipelineIds-stage: CutIDPServiceReleaseBranch,IDPServiceSaaSReleaseBuild
+    jira/project-key: IDP
+    backstage.io/source-location: 'url:https://github.com/harness/harness-core/tree/develop'
+    backstage.io/techdocs-ref: 'url:https://github.com/harness/harness-core/tree/techdocs/idp-service'
+    pagerduty.com/service-id: PT5ED69
+    github.com/project-slug: harness/harness-core
