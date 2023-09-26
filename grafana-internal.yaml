@@ -5,7 +5,7 @@ metadata:
   description: pipeline build and deploy
   annotations:
     harness.io/project-url: https://uat.harness.io/ng/account/I3TdrVLBSd2Zr2ttor7Z2A/cf/orgs/default/projects/HarnessFeatureFlags/
-    grafana/dashboard-selector: "folderUrl == '/dashboards/f/Es9jxFZIk/idp'" 
+    grafana/dashboard-selector: "folderUrl @> 'http://34.68.125.223:3000/dashboards/f/Es9jxFZIk/idp'" 
     grafana/overview-dashboard: "http://34.68.125.223:3000/d/TSFz-KWIz/idp-dash" 
     grafana/alert-label-selector: "destination=sto-prod-slack"
 
