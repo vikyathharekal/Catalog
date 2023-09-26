@@ -6,7 +6,7 @@ metadata:
   annotations:
     harness.io/project-url: https://uat.harness.io/ng/account/I3TdrVLBSd2Zr2ttor7Z2A/cf/orgs/default/projects/HarnessFeatureFlags/
     grafana/dashboard-selector: "folderUrl == 'http://35.224.109.15:3000/dashboards/f/Es9jxFZIk/idp'" 
-    grafana/overview-dashboard: "http://35.224.109.15:3000/d/TSFz-KWIz/idp-dash" 
+    grafana/overview-dashboard: "http://35.224.109.15:3000/d/Es9jxFZIk/idp-dash" 
     grafana/alert-label-selector: "destination=sto-prod-slack"
 
   tags:
