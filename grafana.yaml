@@ -5,9 +5,9 @@ metadata:
   description: pipeline build and deploy
   annotations:
     harness.io/project-url: https://uat.harness.io/ng/account/I3TdrVLBSd2Zr2ttor7Z2A/cf/orgs/default/projects/HarnessFeatureFlags/
-    grafana/dashboard-selector: "folderUrl == 'https://grafana.harness.io/dashboards/f/X3UO7QLVk/sto'"
+    grafana/dashboard-selector: "folderUrl == 'https://grafana.harness.io/dashboards/f/W9TAIwY4k/chaos'"
     grafana/alert-label-selector: "alertname=chaos-driver-alerts-prod1"
-    grafana/overview-dashboard: "https://grafana.harness.io/d/-zsEc0J4k/sto-core-and-ticket-service?orgId=1"
+    grafana/overview-dashboard: "https://grafana.harness.io/d/xtkCtBkic/chaos_control_plane_metrics_prod_1?orgId=1&refresh=10s"
 
   tags:
     - java
