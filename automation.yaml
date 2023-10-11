@@ -2,8 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   tags:
-    - java
-    - food-ordering
+    - AUTOMATION-DONOTDELETE
   name: AUTOMATION-DONOTDELETE
   annotations:
     backstage.io/techdocs-ref: dir:.
