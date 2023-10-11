@@ -4,7 +4,7 @@ metadata:
   tags:
     - java
     - food-ordering
-  name: delivery-service-AUTOMATION-DONOTDELETE
+  name: AUTOMATION-DONOTDELETE
   annotations:
     backstage.io/techdocs-ref: dir:.
     gitlab.com/project-id: '43877214'
