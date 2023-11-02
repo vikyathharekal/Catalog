@@ -14,9 +14,9 @@ metadata:
     backstage.io/kubernetes-namespace: '63feee14cbf66e3c798c4bdc'
     github.com/project-slug: vigneswara-propelo/python-pipeline-samples
     harness.io/pipelines: |
-      Build: https://app.harness.io/ng/account/vpCkHKsDSxK9_KYfjCTMKA/home/orgs/default/projects/IDP_UI/pipelines/Build_IDP_UI_App/pipeline-studio/?storeType=INLINE
-      Lint: https://app.harness.io/ng/account/vpCkHKsDSxK9_KYfjCTMKA/home/orgs/default/projects/IDP_UI/pipelines/Lint/pipeline-studio
-      TypeCheck: https://app.harness.io/ng/account/vpCkHKsDSxK9_KYfjCTMKA/home/orgs/default/projects/IDP_UI/pipelines/Typecheck/pipeline-studio
+      Build: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/home/orgs/default/projects/idptestharness/pipelines/cipipelinetest_sto/pipeline-studio/?storeType=INLINE
+    harness.io/services: |
+      cd: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/cd/orgs/default/projects/idptestharness/services/testservice
     grafana/dashboard-selector: "(tags @> 'prometheus' || tags @> 'blackbox')"
 spec:
   type: service
