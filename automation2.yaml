@@ -14,7 +14,7 @@ metadata:
     backstage.io/kubernetes-namespace: '63feee14cbf66e3c798c4bdc'
     github.com/project-slug: vigneswara-propelo/python-pipeline-samples
     harness.io/pipelines: |
-      Build: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/home/orgs/default/projects/idptestharness/pipelines/cipipelinetest_sto/pipeline-studio/?storeType=INLINE
+      Build: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/all/orgs/default/projects/idptestharness/pipelines/cipipelinetest/executions/EtQuSATdQH2CBagwyNwsVw/pipeline?storeType=INLINE
     harness.io/services: |
       cd: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/cd/orgs/default/projects/idptestharness/services/testservice
     grafana/dashboard-selector: "(tags @> 'prometheus' || tags @> 'blackbox')"
