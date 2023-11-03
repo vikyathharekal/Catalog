@@ -18,6 +18,7 @@ metadata:
     harness.io/services: |
       cd: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/cd/orgs/default/projects/idptestharness/services/testservice
     grafana/dashboard-selector: "(tags @> 'prometheus' || tags @> 'blackbox')"
+    pagerduty.com/service-id: PNISOWY
 spec:
   type: service
   system: delivery
