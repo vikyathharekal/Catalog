@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  tags:
+    - automation
+  name: AUTOMATION-DONOTDELETE
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    gitlab.com/project-id: '43877214'
+    jira/project-key: IDP
+    jenkins.io/github-folder: 'CDS-68313'
+    firehydrant.com/service-name: 'python-pipeline-samples'
+    backstage.io/kubernetes-label-selector: 'app=idp-ui'
+    backstage.io/kubernetes-namespace: '643e41084fe8bd57d9f2be43'
+    github.com/project-slug: vigneswara-propelo/python-pipeline-samples
+    harness.io/pipelines: |
+      Build: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/home/orgs/default/projects/idptestharness/pipelines/cipipelinetest_sto/pipeline-studio/?storeType=INLINE
+    harness.io/services: |
+      cd: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/cd/orgs/default/projects/idptestharness/services/testservice
+    grafana/dashboard-selector: "(tags @> 'prometheus' || tags @> 'blackbox')"
+    pagerduty.com/service-id: PNISOWY
+spec:
+  type: service
+  system: delivery
+  lifecycle: production
+  owner: harness_account_all_users
+  providesApis: 
+    - idp-Service-api
