@@ -10,5 +10,4 @@ metadata:
 spec:
   type: service
   lifecycle: prod
-  owner: idp
   system: idp
