@@ -11,4 +11,3 @@ spec:
   type: service
   lifecycle: prod
   system: idp
-  owner: test
