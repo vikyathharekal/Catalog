@@ -15,12 +15,20 @@ metadata:
   description: IDP backend service
   tags: [java]
   links:
-    - title: repo
+    - title: GitHub Repo
       url: https://github.com/harness/harness-core
+    - title: Slack channel
+      url: https://harness.slack.com/archives/C045CQ3PGAC
+    - title: Email
+      url: https://harness.atlassian.net/wiki/spaces/IDP/overview#:~:text=idp%2Dinternal%40harness.io
+    - title: New member onboarding docs  
+      url: https://harness.atlassian.net/wiki/spaces/IDP/pages/21274821179/Onboarding+docs
     - title: Debugging FAQs
       url: https://harness.atlassian.net/wiki/spaces/IDP/pages/21456552616/Debugging+FAQs
     - title: Troubleshooting guide
       url: https://harness.atlassian.net/wiki/spaces/IDP/pages/21483946109/Troubleshooting+guide
+    - title: Zephyr testcases
+      url: https://harness.atlassian.net/projects/IDP?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10341
   annotations:
     harness.io/cd-serviceId: "idp-service"
     backstage.io/kubernetes-label-selector: 'app=idp-service'
@@ -31,7 +39,7 @@ metadata:
     harness.io/cd-serviceId-stage: idpservice
     harness.io/ci-pipelineIds-stage: CutIDPServiceReleaseBranch,IDPServiceSaaSReleaseBuild
     jira/project-key: IDP
-    backstage.io/source-location: 'url:https://github.com/harness/harness-core/tree/develop'
+    backstage.io/source-location: 'url:https://github.com/harness/harness-core/tree/develop/idp-service'
     backstage.io/techdocs-ref: 'url:https://github.com/harness/harness-core/tree/techdocs/idp-service'
     pagerduty.com/service-id: PT5ED69
     github.com/project-slug: harness/harness-core
