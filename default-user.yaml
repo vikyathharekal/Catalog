@@ -7,31 +7,6 @@ metadata:
   harness.io/roles: _account_viewer,DevSpaceRole,Connectors_Access,Secrets_Access,_account_viewer,_ccm_admin,_account_viewer,Secrets_Access,prenvgeneralaccessaccrole,Template_Access,Connectors_Access,_account_viewer,prenvgeneralaccessaccrole,prenvgeneralaccessaccrole,SECRET_ACCESS,Connectors_Access,IDPAdmin,_account_viewer
   name: default
   title: default
-relations:
-  - type: memberOf
-    targetRef: group:default/harness_account_all_users
-    target:
-      kind: group
-      namespace: default
-      name: harness_account_all_users
-  - type: memberOf
-    targetRef: group:default/idmbackend
-    target:
-      kind: group
-      namespace: default
-      name: idmbackend
-  - type: memberOf
-    targetRef: group:default/idp_admin
-    target:
-      kind: group
-      namespace: default
-      name: idp_admin
-  - type: memberOf
-    targetRef: group:default/users
-    target:
-      kind: group
-      namespace: default
-      name: users
 spec:
   profile:
     displayName: default
