@@ -13,7 +13,7 @@ apiVersion: "backstage.io/v1alpha1"
 metadata:
   name: "idp-service"
   description: IDP backend service
-  tags: [java]
+  tags: [java,one]
   links:
     - title: GitHub Repo
       url: https://github.com/harness/harness-core
