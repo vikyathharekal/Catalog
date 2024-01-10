@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: grafana-includes1
+  name: grafana-includes
   description: pipeline build and deploy
   annotations:
     harness.io/project-url: https://uat.harness.io/ng/account/I3TdrVLBSd2Zr2ttor7Z2A/cf/orgs/default/projects/HarnessFeatureFlags/
