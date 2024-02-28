@@ -9,6 +9,7 @@ metadata:
     - harness
 spec:
   owner: sandeepa.kv@harness.io
+  type: service
   parameters1:
     - title: Harness Details
       required:
