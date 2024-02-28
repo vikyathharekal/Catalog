@@ -10,7 +10,7 @@ metadata:
 spec:
   owner: sandeepa.kv@harness.io
   type: service
-  parameters:
+  parameters1:
     - title: Harness Details
       required:
         - user_email
