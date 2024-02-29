@@ -11,7 +11,7 @@ spec:
     - Component:ng-manager  
 apiVersion: "backstage.io/v1alpha1"
 metadata:
-  name: "idp-service"
+  name: "idp-service1"
   description: IDP backend service
   tags: [java,one]
   links:
