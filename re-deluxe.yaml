@@ -77,7 +77,7 @@ spec:
       name: Publish
       action: publish:bitbucketCloud
       input:
-        repoUrl: bitbucket.org?workspace=deluxe-development&project=${{
+        repoUrl: bitbucket.org?workspace=idptest&project=${{
           parameters.project_name }}&repo=${{ parameters.repo_name }}
         repoVisibility: private
     - id: register
