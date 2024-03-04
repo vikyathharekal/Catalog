@@ -3,13 +3,13 @@ kind: Template
 metadata:
   name: re-deluxe-1
   title: re-deluxe-1
-  description: A template to create a new service
+  description: re-deluxe-1
   tags:
     - nextjs
     - react
     - javascript
 spec:
-  owner: user:drod-deluxe
+  owner: harness_account_all_users
   type: website
   parameters:
     - title: Project information
