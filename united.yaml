@@ -26,29 +26,8 @@ metadata:
       url: http://my-internal-website.com
   uid: 6900434e-f051-446e-bbb6-93f374bc4b36
   etag: a607ca4b81ee652d4e397a67d2110c3a58126b4a
-relations:
-  - type: ownedBy
-    targetRef: group:default/ual-harness-airportops-aap-admin-dgg
-    target:
-      kind: group
-      namespace: default
-      name: ual-harness-airportops-aap-admin-dgg
-  - type: partOf
-    targetRef: system:default/aap
-    target:
-      kind: system
-      namespace: default
-      name: aap
-  - type: providesApi
-    targetRef: api:default/aap-pnrcheckin
-    target:
-      kind: api
-      namespace: default
-      name: aap-pnrcheckin
 spec:
   type: service
   owner: UAL-Harness-AirportOps-AAP-Admin-DGG
   lifecycle: experimental
   system: AAP
-  providesApis:
-    - aap-pnrcheckin
