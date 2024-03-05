@@ -1,0 +1,54 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  namespace: default
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/United-Airlines-Org/PlatformEngineering.IDP-templates/tree/main/servicecatalogs/aap-pnrcheckin-catalog.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/United-Airlines-Org/PlatformEngineering.IDP-templates/blob/main/servicecatalogs/aap-pnrcheckin-catalog.yaml
+    backstage.io/view-url: https://github.com/United-Airlines-Org/PlatformEngineering.IDP-templates/tree/main/servicecatalogs/aap-pnrcheckin-catalog.yaml
+    backstage.io/edit-url: https://github.com/United-Airlines-Org/PlatformEngineering.IDP-templates/edit/main/servicecatalogs/aap-pnrcheckin-catalog.yaml
+    backstage.io/source-location: url:https://github.com/United-Airlines-Org/AirportOps.AAP.AAP-CheckIn-BFF-MS
+    harness.io/pipelines: >
+      build-pnrcheckin:
+      https://app.harness.io/ng/account/H6rHO8vtQYKelD_wgjnMpA/cd/orgs/AirportOps/projects/AAP/pipelines/AirportOps_AAP_AAPCheckInBFFMS/pipeline-studio/?storeType=INLINE
+    harness.io/services: >
+      cd-pnrcheckin:
+      https://app.harness.io/ng/account/H6rHO8vtQYKelD_wgjnMpA/cd/orgs/AirportOps/projects/AAP/services/pnrcheckin
+    github.com/project-slug: United-Airlines-Org/AirportOps.AAP.AAP-CheckIn-BFF-MS
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://harness.io
+    harness.io/project-url: https://app.harness.io/ng/account/H6rHO8vtQYKelD_wgjnMpA/cd/orgs/AirportOps/projects/AAP
+  name: AAP-CheckIn-BFF-MS
+  description: |
+    My Example service which has something to do with APIs and database.
+  links:
+    - title: Website
+      url: http://my-internal-website.com
+  uid: 6900434e-f051-446e-bbb6-93f374bc4b36
+  etag: a607ca4b81ee652d4e397a67d2110c3a58126b4a
+relations:
+  - type: ownedBy
+    targetRef: group:default/ual-harness-airportops-aap-admin-dgg
+    target:
+      kind: group
+      namespace: default
+      name: ual-harness-airportops-aap-admin-dgg
+  - type: partOf
+    targetRef: system:default/aap
+    target:
+      kind: system
+      namespace: default
+      name: aap
+  - type: providesApi
+    targetRef: api:default/aap-pnrcheckin
+    target:
+      kind: api
+      namespace: default
+      name: aap-pnrcheckin
+spec:
+  type: service
+  owner: UAL-Harness-AirportOps-AAP-Admin-DGG
+  lifecycle: experimental
+  system: AAP
+  providesApis:
+    - aap-pnrcheckin
