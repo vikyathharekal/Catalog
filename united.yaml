@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   tags:
-    - ABCVIK
+    - abcvik
   namespace: default
   annotations:
     backstage.io/managed-by-location: url:https://github.com/United-Airlines-Org/PlatformEngineering.IDP-templates/tree/main/servicecatalogs/aap-pnrcheckin-catalog.yaml
