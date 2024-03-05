@@ -28,6 +28,6 @@ metadata:
   etag: a607ca4b81ee652d4e397a67d2110c3a58126b4a
 spec:
   type: service
-  owner: UAL-Harness-AirportOps-AAP-Admin-DGG
+  owner: ual-harness-airportops-aap-admin-dgg
   lifecycle: experimental
   system: AAP
