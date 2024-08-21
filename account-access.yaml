@@ -1,5 +1,5 @@
 apiVersion: scaffolder.backstage.io/v1beta3
-kind: Template
+kind: template
 metadata:
   name: accountaccess1
   title: Provide access to Harness account
