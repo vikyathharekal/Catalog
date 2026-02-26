@@ -1,0 +1,101 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: integration-manager
+  description: Harness IDP Integration Manager - Entity integration, synchronization, and management service
+  annotations:
+    backstage.io/techdocs-ref: url:https://git0.harness.io/l7B_kbSEQD2wjrM7PShm5w/PROD/Harness_Commons/harness-code/tree/vikyath/docs/integration-manager
+    github.com/project-slug: harness/harness-code
+  tags:
+    - go
+    - microservice
+    - integration
+    - harness-idp
+  links:
+    - url: https://developer.harness.io/docs/internal-developer-portal/
+      title: Harness IDP Documentation
+      icon: docs
+spec:
+  type: service
+  lifecycle: production
+  owner: harness-idp-team
+  system: harness-idp
+  providesApis:
+    - integration-manager-api
+  dependsOn:
+    - resource:mongodb
+    - resource:redis
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: integration-manager-api
+  description: Integration Manager REST API
+spec:
+  type: openapi
+  lifecycle: production
+  owner: harness-idp-team
+  system: harness-idp
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Integration Manager API
+      description: APIs for managing entities, schemas, relations, and integration configurations
+      version: 1.0.0
+    paths:
+      /api/v1/entities:
+        get:
+          summary: List entities
+          description: Retrieve a paginated list of entities
+        post:
+          summary: Create entity
+          description: Create a new entity
+      /api/v1/entity-schemas:
+        get:
+          summary: List entity schemas
+          description: Retrieve all entity schemas
+        post:
+          summary: Create entity schema
+          description: Create a new entity schema
+      /api/v1/entity-relations:
+        get:
+          summary: List entity relations
+          description: Retrieve entity relations
+        post:
+          summary: Create entity relation
+          description: Create a new entity relation
+      /api/v1/integration-configs:
+        get:
+          summary: List integration configurations
+          description: Retrieve all integration configurations
+        post:
+          summary: Create integration configuration
+          description: Create a new integration configuration
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: harness-idp
+  description: Harness Internal Developer Platform
+spec:
+  owner: harness-idp-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: mongodb
+  description: MongoDB database for entity storage
+spec:
+  type: database
+  owner: harness-idp-team
+  system: harness-idp
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: redis
+  description: Redis for event streaming and caching
+spec:
+  type: cache
+  owner: harness-idp-team
+  system: harness-idp
