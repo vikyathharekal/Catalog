@@ -10,7 +10,7 @@ metadata:
 spec:
   owner: sandeepa.kv@harness.io
   type: service
-  parameters1:
+  parameters:
     - title: Harness Details
       required:
         - user_email
@@ -20,6 +20,10 @@ spec:
           title: Harness account ID
           type: string
           description: Harness account ID where you need access
+        user_email:
+          title: Harness user email ID
+          type: string
+          description: Harness user email id who need access
         token:
           title: Harness Token
           type: string
@@ -30,7 +34,7 @@ spec:
       name: Inviting user to account
       action: trigger:harness-custom-pipeline
       input:
-        url: 'https://app.harness.io/ng/account/vpCkHKsDSxK9_KYfjCTMKA/cd/orgs/IDP_SAAS/projects/IDPSAASTEST/pipelines/grant_account_access/pipeline-studio/?storeType=INLINE'
+        url: 'https://harness0.harness.io/ng/account/l7B_kbSEQD2wjrM7PShm5w/all/orgs/PROD/projects/IDP/pipelines/grant_access_to_used_in_account/pipeline-studio/?storeType=INLINE'
         inputset:
           user_email: ${{ parameters.user_email }}
           account_id: ${{ parameters.account_id }}
@@ -38,4 +42,4 @@ spec:
   output:
     links:
       - title: Pipeline Details
-        url: ${{ steps.trigger.output.PipelineUrl }}       
+        url: ${{ steps.trigger.output.PipelineUrl }}             
